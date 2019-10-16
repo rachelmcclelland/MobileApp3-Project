@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ScrollingBackground : MonoBehaviour
 {
-    public float speed = -2f;
+    // Reference: https://www.youtube.com/watch?v=je1ZHOn3my4
+    public float speed = -1.7f;
     private Rigidbody2D rb;
 
     // Start is called before the first frame update

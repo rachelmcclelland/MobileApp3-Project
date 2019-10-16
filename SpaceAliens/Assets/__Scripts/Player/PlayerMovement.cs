@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         //calculate a new x position
         var newXPos = transform.position.x + deltaX;
 
-        transform.position = new Vector2(newXPos, transform.position.y);
+        transform.position = new Vector3(newXPos, transform.position.y, -5);
     }
 
 }

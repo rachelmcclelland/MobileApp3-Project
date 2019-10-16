@@ -57,8 +57,14 @@
   <ItemGroup>
      <Compile Include="Assets\__Scripts\Background\RepeatingBackground.cs" />
      <Compile Include="Assets\__Scripts\Background\ScrollingBackground.cs" />
+     <Compile Include="Assets\__Scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\__Scripts\Enemy\FallingBehaviour.cs" />
+     <Compile Include="Assets\__Scripts\Enemy\PointSpawner.cs" />
+     <Compile Include="Assets\__Scripts\Enemy\SpawnPoint.cs" />
      <Compile Include="Assets\__Scripts\Player\Boundaries.cs" />
      <Compile Include="Assets\__Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\__Scripts\Utilities\ListUtils.cs" />
+     <Compile Include="Assets\__Scripts\Utilities\ParentUtils.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/rache/Documents/Mobile App 3/MobileApp3-Project/SpaceAliens/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

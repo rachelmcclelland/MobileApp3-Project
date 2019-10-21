@@ -22,6 +22,6 @@ public class ScrollingBackground : MonoBehaviour
 
         //GetComponent<Renderer>().material.mainTextureOffset = offset;
 
-        rb.velocity = new Vector2(0, speed);
+       // rb.velocity = new Vector2(0, speed);
     }
 }

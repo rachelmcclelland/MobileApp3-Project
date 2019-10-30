@@ -63,6 +63,7 @@
      <Compile Include="Assets\__Scripts\Enemy\SpawnPoint.cs" />
      <Compile Include="Assets\__Scripts\Player\Boundaries.cs" />
      <Compile Include="Assets\__Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\__Scripts\SceneController.cs" />
      <Compile Include="Assets\__Scripts\Utilities\ListUtils.cs" />
      <Compile Include="Assets\__Scripts\Utilities\ParentUtils.cs" />
  <Reference Include="Unity.Timeline.Editor">

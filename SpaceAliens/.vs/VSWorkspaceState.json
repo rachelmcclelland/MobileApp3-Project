@@ -3,8 +3,10 @@
     "",
     "\\Assets",
     "\\Assets\\__Scripts",
+    "\\Assets\\__Scripts\\Enemy",
+    "\\Assets\\__Scripts\\Player",
     "\\Assets\\__Scripts\\Utilities"
   ],
-  "SelectedNode": "\\Assets\\__Scripts\\Enemy.cs",
+  "SelectedNode": "\\Assets\\__Scripts\\Enemy\\Shooter.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     [SerializeField]
-    private int scoreValue = 10; // later
+    private int scoreValue = 10; // later;
 
     public int ScoreValue { get { return scoreValue; } }
 
@@ -14,7 +14,6 @@ public class Enemy : MonoBehaviour
     public delegate void EnemyKilled(Enemy enemy);
 
     public static EnemyKilled EnemyKilledEvent;
-
 
     // gets kicked off when transform gets hit by something
     private void OnTriggerEnter2D(Collider2D collision)

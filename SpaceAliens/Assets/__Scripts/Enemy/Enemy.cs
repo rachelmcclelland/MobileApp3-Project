@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Enemy : MonoBehaviour
     public delegate void EnemyKilled(Enemy enemy);
 
     public static EnemyKilled EnemyKilledEvent;
-
+    
     // gets kicked off when transform gets hit by something
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -23,7 +24,8 @@ public class Enemy : MonoBehaviour
         if (player) // player hits, then collect circles
         {
             PublishEnemyKilledEvent();
-            Destroy(gameObject);
+            //SceneManager.LoadScene("GameOver"); // load game over page
+            GameControlScript.health -= 1;
         }
     }
 

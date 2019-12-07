@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,9 @@ public class DisplayResults : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeUI.text = "Time: " + Timer.timeStart;
+        TimeSpan timeSpan = TimeSpan.FromSeconds(Timer.timeStart);
+        //timeUI.text = "Time: " + Timer.timeStart;
+        timeUI.text = "Timer: " + timeSpan.Minutes + " : " + timeSpan.Seconds;
     }
 
     // Update is called once per frame

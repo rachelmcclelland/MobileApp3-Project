@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 118168015}
   - component: {fileID: 118168014}
   - component: {fileID: 118168013}
+  - component: {fileID: 118168016}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -155,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 32}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -1.2, y: 27.1}
+  m_SizeDelta: {x: 123.5, y: 39.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &118168013
 MonoBehaviour:
@@ -165,7 +166,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118168011}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c36f20c6f4923a94aa5b71c9a1e39bb6, type: 3}
   m_Name: 
@@ -193,7 +194,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -202,9 +203,9 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Time: '
+  m_Text: Press the spacebar to go back to main menu
 --- !u!222 &118168015
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -213,6 +214,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118168011}
   m_CullTransparentMesh: 0
+--- !u!114 &118168016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118168011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b56d30665733534fb2d762f984bda21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &162356335
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +530,7 @@ GameObject:
   - component: {fileID: 2128117387}
   - component: {fileID: 2128117386}
   - component: {fileID: 2128117385}
+  - component: {fileID: 2128117388}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -572,3 +586,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2128117388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128117384}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b56d30665733534fb2d762f984bda21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

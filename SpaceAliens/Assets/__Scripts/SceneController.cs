@@ -8,7 +8,7 @@ public class SceneController : MonoBehaviour
     // methods for buttons
     public void OnClickPlay()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("GameSceneL1");
     }
 
     public void ExitGame()

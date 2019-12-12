@@ -15,6 +15,7 @@ public class WeaponsController : MonoBehaviour
 
     private GameObject bulletParent;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +52,8 @@ public class WeaponsController : MonoBehaviour
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.down * bulletSpeed;
-        // could play sound too
+
+
 
     }
 }

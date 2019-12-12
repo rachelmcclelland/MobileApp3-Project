@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 434111230}
   - component: {fileID: 434111229}
   m_Layer: 0
-  m_Name: CreditsButton
+  m_Name: HelpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

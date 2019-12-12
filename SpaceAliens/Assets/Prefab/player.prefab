@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7723126262647001542}
   - component: {fileID: 7723126262647001593}
   - component: {fileID: 6203376176514213983}
+  - component: {fileID: 659004536}
+  - component: {fileID: 5953114351748740760}
   m_Layer: 8
   m_Name: player
   m_TagString: Untagged
@@ -140,3 +142,37 @@ PolygonCollider2D:
       - {x: 0.06, y: 0.16}
       - {x: -0.08, y: 0.16}
       - {x: -0.16, y: 0}
+--- !u!114 &659004536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723126262647001541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4a16468538daf40ad7f88f47768fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5302791717073046016, guid: 07a548a74251b594fb95130f5214258e,
+    type: 3}
+  bulletSpeed: 5
+  firingRate: 0.4
+  shootClip: {fileID: 8300000, guid: f6f135da9659d074796e1635d2bfd950, type: 3}
+--- !u!114 &5953114351748740760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723126262647001541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4a16468538daf40ad7f88f47768fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 5302791717073046016, guid: 07a548a74251b594fb95130f5214258e,
+    type: 3}
+  bulletSpeed: 5
+  firingRate: 0.4
+  shootClip: {fileID: 8300000, guid: f6f135da9659d074796e1635d2bfd950, type: 3}

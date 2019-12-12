@@ -7,6 +7,7 @@ public class GameControlScript : MonoBehaviour
 {
     [SerializeField] private GameObject life1, life2, life3;
     public static int health;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class GameControlScript : MonoBehaviour
         life1.gameObject.SetActive(true);
         life2.gameObject.SetActive(true);
         life3.gameObject.SetActive(true);
+        
     }
 
     // Update is called once per frame
@@ -54,5 +56,6 @@ public class GameControlScript : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
         }
+
     }
 }

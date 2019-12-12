@@ -16,11 +16,19 @@ public class Player : MonoBehaviour
 
     private GameObject bulletParent;
 
+    [SerializeField]
+    private AudioClip shootClip;
+
+    private SoundController soundController;
+
 
     // Start is called before the first frame update
     void Start()
     {
         bulletParent = ParentUtils.GetBulletParent();
+
+        soundController = SoundController.FindSoundController();
+
     }
 
     // Update is called once per frame
@@ -41,7 +49,7 @@ public class Player : MonoBehaviour
                 CancelInvoke("Shoot");
             }
         }
-       
+
     }
 
     private void Shoot()
@@ -56,6 +64,11 @@ public class Player : MonoBehaviour
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.up * bulletSpeed;
+
+        if (soundController)
+        {
+            soundController.PlayOneShot(shootClip);
+        }
 
     }
 }

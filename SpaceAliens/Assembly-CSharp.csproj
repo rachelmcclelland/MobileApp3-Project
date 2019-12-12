@@ -68,7 +68,6 @@
      <Compile Include="Assets\__Scripts\Enemy\SpawnPoint.cs" />
      <Compile Include="Assets\__Scripts\Enemy\ThrowRayCast.cs" />
      <Compile Include="Assets\__Scripts\Enemy\WeaponsController.cs" />
-     <Compile Include="Assets\__Scripts\GameControlScriptL2.cs" />
      <Compile Include="Assets\__Scripts\GameOverScreen\Controller.cs" />
      <Compile Include="Assets\__Scripts\Level One\GameControlScript.cs" />
      <Compile Include="Assets\__Scripts\MenuScript.cs" />
@@ -79,6 +78,7 @@
      <Compile Include="Assets\__Scripts\Player\PlayerBullet.cs" />
      <Compile Include="Assets\__Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\__Scripts\SceneController.cs" />
+     <Compile Include="Assets\__Scripts\SoundController.cs" />
      <Compile Include="Assets\__Scripts\Timer.cs" />
      <Compile Include="Assets\__Scripts\Utilities\ListUtils.cs" />
      <Compile Include="Assets\__Scripts\Utilities\ParentUtils.cs" />

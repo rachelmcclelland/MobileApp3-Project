@@ -6,15 +6,20 @@ using UnityEngine.SceneManagement;
 public class Enemy : MonoBehaviour
 {
 
-    [SerializeField]
-    private int scoreValue = 10; // later;
-
-    public int ScoreValue { get { return scoreValue; } }
-
     // notify the system when it dies.
     public delegate void EnemyKilled(Enemy enemy);
 
     public static EnemyKilled EnemyKilledEvent;
+
+    [SerializeField]
+    private AudioClip lostLifeClip;
+
+    private SoundController soundController;
+
+    void Start()
+    {
+        soundController = SoundController.FindSoundController();
+    }
 
 
     void Update()
@@ -24,24 +29,29 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
 
+        
     }
 
     // gets kicked off when transform gets hit by something
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.GetComponent<PlayerMovement>(); // hit by player
-        var bullet = collision.GetComponent<PlayerBullet>();
+        var playerbullet = collision.GetComponent<PlayerBullet>();
 
-        if (player) // player hits, then collect circles
+        if (player)
         {
             PublishEnemyKilledEvent();
             //SceneManager.LoadScene("GameOver"); // load game over page
             GameControlScript.health -= 1;
+            if (soundController)
+            {
+                soundController.PlayOneShot(lostLifeClip);
+            }
         }
-        else if (bullet) // check if its a square using the tag property 
+        else if (playerbullet)
         {
 
-            Destroy(bullet.gameObject);
+            Destroy(playerbullet.gameObject);
             Destroy(gameObject);
         }
 

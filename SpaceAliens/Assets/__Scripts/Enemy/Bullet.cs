@@ -11,4 +11,16 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var player = collision.GetComponent<PlayerMovement>(); // hit by player
+
+        if (player)
+        {
+            Destroy(gameObject);
+            GameControlScript.health -= 1;
+        }
+
+    }
 }

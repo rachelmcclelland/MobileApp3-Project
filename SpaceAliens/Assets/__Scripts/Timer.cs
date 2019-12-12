@@ -10,22 +10,41 @@ public class Timer : MonoBehaviour
     [SerializeField]
     public Text time;
     public static float timeStart;
+    Scene currentScene;
+    string sceneName;
+    float timer;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Create a temporary reference to the current scene.
+        currentScene = SceneManager.GetActiveScene();
 
+        // Retrieve the name of this scene.
+        sceneName = currentScene.name;
     }
 
     void Update()
     {
         StopWatchTimer();
         TimeSpan timeSpan = TimeSpan.FromSeconds(timeStart);
+        timer += Time.deltaTime;
 
-        //if (timeSpan.Seconds == 30.0f)
-        //{
-        //    SceneManager.LoadScene("GameSceneL2");
-        //}
+        if (sceneName == "GameSceneL1")
+        {
+            if ((int)timer == 120)
+            {
+                SceneManager.LoadScene("GameSceneL2");
+            }
+        }
+        else if (sceneName == "GameSceneL2")
+        {
+            if ((int)timer == 150)
+            {
+                SceneManager.LoadScene("GameSceneL3");
+            }
+        }
+
     }
 
     void StopWatchTimer()

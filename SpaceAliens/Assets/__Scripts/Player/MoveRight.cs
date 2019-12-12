@@ -6,9 +6,6 @@ public class MoveRight : MonoBehaviour
 {
     [SerializeField] private GameObject parent;
 
-    [SerializeField]
-    private float moveSpeed = 10.0f;
-
     private void OnMouseDown()
     {
         MovePlayer();

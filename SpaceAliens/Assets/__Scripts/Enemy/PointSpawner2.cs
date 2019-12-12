@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Utilities;
+using UnityEngine.SceneManagement;
 
 public class PointSpawner2 : MonoBehaviour
 {
     [SerializeField]
     private Enemy enemyPrefab;
-    private float spawnDelay = 30.0f;
+    private float spawnDelay;
     private float spawnInterval = 2.0f;
 
     private IList<SpawnPoint> spawnPoints;
@@ -19,6 +20,25 @@ public class PointSpawner2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Create a temporary reference to the current scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        if (sceneName == "GameSceneL1")
+        {
+            spawnDelay = 30.0f;
+        }
+        else if (sceneName == "GameSceneL2")
+        {
+            spawnDelay = 20.0f;
+        }
+        else if (sceneName == "GameSceneL3")
+        {
+            spawnDelay = 20.0f;
+        }
+
         // get the enemey parent object
         enemyParent = ParentUtils.GetEnemyParent();
         // need to get a list of spawn points

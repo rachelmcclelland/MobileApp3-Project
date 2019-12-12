@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a7906b63c169047bd5bfb99b9cb741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 10
+  lostLifeClip: {fileID: 8300000, guid: fa2bfe97bd0743a418cf298e2277f64e, type: 3}
 --- !u!60 &1340695456393207003
 PolygonCollider2D:
   m_ObjectHideFlags: 0

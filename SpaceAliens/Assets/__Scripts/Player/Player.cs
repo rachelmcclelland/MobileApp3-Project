@@ -55,6 +55,14 @@ public class Player : MonoBehaviour
 
     }
 
+    private void OnMouseDown()
+    {
+        if (GameControlScript.health == 1)
+        {
+            Shoot();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var starpoints = collision.GetComponent<StarPoints>();

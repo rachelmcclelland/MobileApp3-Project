@@ -77,6 +77,8 @@
      <Compile Include="Assets\__Scripts\Player\Player.cs" />
      <Compile Include="Assets\__Scripts\Player\PlayerBullet.cs" />
      <Compile Include="Assets\__Scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\__Scripts\Player\PointSpawnerP.cs" />
+     <Compile Include="Assets\__Scripts\Player\StarPoints.cs" />
      <Compile Include="Assets\__Scripts\SceneController.cs" />
      <Compile Include="Assets\__Scripts\SoundController.cs" />
      <Compile Include="Assets\__Scripts\Timer.cs" />

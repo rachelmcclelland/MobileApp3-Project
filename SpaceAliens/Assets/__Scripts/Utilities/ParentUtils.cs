@@ -8,6 +8,7 @@ namespace Utilities
     {
         public const string BULLET_PARENT = "BulletParent";
         public const string ENEMY_PARENT = "EnemyParent";
+        public const string STAR_PARENT = "StarParent";
 
         public static GameObject GetBulletParent()
         {
@@ -17,6 +18,11 @@ namespace Utilities
         public static GameObject GetEnemyParent()
         {
             return GetParent(ENEMY_PARENT);
+        }
+
+        public static GameObject GetStarParent()
+        {
+            return GetParent(STAR_PARENT);
         }
 
         private static GameObject GetParent(string parentName)

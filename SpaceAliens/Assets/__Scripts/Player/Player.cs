@@ -5,6 +5,8 @@ using Utilities;
 
 public class Player : MonoBehaviour
 {
+    public static int score = 0;
+
     // field attributes
     [SerializeField]
     private PlayerBullet bulletPrefab;
@@ -51,6 +53,18 @@ public class Player : MonoBehaviour
             }
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var starpoints = collision.GetComponent<StarPoints>();
+
+        if(starpoints)
+        {
+            Destroy(starpoints.gameObject);
+            Debug.Log(score);
+            score += 10;
+        }
     }
 
     private void Shoot()

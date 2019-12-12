@@ -11,14 +11,7 @@ public class DisplayResults : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TimeSpan timeSpan = TimeSpan.FromSeconds(Timer.timeStart);
-        //timeUI.text = "Time: " + Timer.timeStart;
-        timeUI.text = "Timer: " + timeSpan.Minutes + " : " + timeSpan.Seconds;
+        timeUI.text += " " + Player.score;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

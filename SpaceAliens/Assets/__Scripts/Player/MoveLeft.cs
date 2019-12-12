@@ -6,6 +6,7 @@ public class MoveLeft : MonoBehaviour
 {
     [SerializeField] private GameObject parent;
 
+
     private void OnMouseDown()
     {
         MovePlayer();
@@ -13,6 +14,7 @@ public class MoveLeft : MonoBehaviour
 
     private void MovePlayer()
     {
+        // moves the player to the left
         parent.transform.Translate(Vector3.left * 10 * Time.deltaTime);
 
     }

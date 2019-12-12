@@ -11,6 +11,16 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene("GameSceneL1");
     }
 
+    public void OnClickHelp()
+    {
+        SceneManager.LoadScene("HowToScene");
+    }
+
+    public void BackToMain()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
     public void ExitGame()
     {
         Application.Quit();

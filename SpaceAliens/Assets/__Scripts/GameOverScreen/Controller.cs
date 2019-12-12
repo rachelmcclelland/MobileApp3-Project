@@ -5,15 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Controller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
+        // brings player back to main screen when game is over
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene("MainScene");

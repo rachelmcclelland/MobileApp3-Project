@@ -4,8 +4,10 @@ using UnityEngine;
 using Utilities;
 using UnityEngine.SceneManagement;
 
+// used for second enemy
 public class PointSpawner2 : MonoBehaviour
 {
+    // field attributes
     [SerializeField]
     private Enemy enemyPrefab;
     private float spawnDelay;
@@ -26,9 +28,10 @@ public class PointSpawner2 : MonoBehaviour
         // Retrieve the name of this scene.
         string sceneName = currentScene.name;
 
+        // set the delay of the enemy depending on which level the player is on
         if (sceneName == "GameSceneL1")
         {
-            spawnDelay = 30.0f;
+            spawnDelay = 30.0f; 
         }
         else if (sceneName == "GameSceneL2")
         {

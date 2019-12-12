@@ -18,17 +18,7 @@ public class SoundController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            if (muted)
-            {
-                AudioListener.pause = false;
-                muted = false;
-            }
-            else
-            {
-                AudioListener.pause = true;
-                muted = true;
-            }
-            
+            MuteSound();   
 
         }
 
@@ -55,13 +45,18 @@ public class SoundController : MonoBehaviour
         return soundController;
     }
 
-    public void PauseSound()
+    public void MuteSound()
     {
-        audioSource.Pause();
+        if (muted)
+        {
+            AudioListener.pause = false;
+            muted = false;
+        }
+        else
+        {
+            AudioListener.pause = true;
+            muted = true;
+        }
     }
 
-    public void PlaySound()
-    {
-        audioSource.Play();
-    }
 }

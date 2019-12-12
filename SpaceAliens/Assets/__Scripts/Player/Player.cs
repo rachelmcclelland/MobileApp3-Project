@@ -5,6 +5,7 @@ using Utilities;
 
 public class Player : MonoBehaviour
 {
+    // field attributes
     [SerializeField]
     private PlayerBullet bulletPrefab;
 
@@ -59,14 +60,12 @@ public class Player : MonoBehaviour
         // set position to player position(this.transform)
         bullet.transform.position = transform.position;
 
-        //to give it movement, need to add a RigidBody2D to the bullet prefab
-        // do this in Unity
-
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.velocity = Vector2.up * bulletSpeed;
+        rb.velocity = Vector2.up * bulletSpeed; 
 
         if (soundController)
         {
+            // play shot when player uses shoot button
             soundController.PlayOneShot(shootClip);
         }
 

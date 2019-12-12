@@ -21,9 +21,9 @@ public class Enemy : MonoBehaviour
         soundController = SoundController.FindSoundController();
     }
 
-
     void Update()
-    {
+    { 
+        // destroy enemy objects when they dissppear of the screen
         if(!GetComponent<Renderer>().isVisible)
         {
             Destroy(gameObject);

@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Utilities;
 
+// used for the first enemy
+
 //spawn enemies at different spawn points
 public class PointSpawner : MonoBehaviour
 {
+    // field attributes
     [SerializeField]
     private Enemy enemyPrefab;
     private float spawnDelay = 0.5f;

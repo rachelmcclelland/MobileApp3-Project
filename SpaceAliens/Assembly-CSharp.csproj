@@ -68,8 +68,8 @@
      <Compile Include="Assets\__Scripts\Enemy\SpawnPoint.cs" />
      <Compile Include="Assets\__Scripts\Enemy\ThrowRayCast.cs" />
      <Compile Include="Assets\__Scripts\Enemy\WeaponsController.cs" />
+     <Compile Include="Assets\__Scripts\GameControlScript.cs" />
      <Compile Include="Assets\__Scripts\GameOverScreen\Controller.cs" />
-     <Compile Include="Assets\__Scripts\Level One\GameControlScript.cs" />
      <Compile Include="Assets\__Scripts\MenuScript.cs" />
      <Compile Include="Assets\__Scripts\Player\Boundaries.cs" />
      <Compile Include="Assets\__Scripts\Player\MoveLeft.cs" />
